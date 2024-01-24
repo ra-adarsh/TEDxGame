@@ -32,7 +32,7 @@ app.use("/retrieve", retrieveController);
 
 const port = process.env.PORT || 3001;
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb://localhost:27017/your-database-name', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
